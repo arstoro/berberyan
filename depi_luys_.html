@@ -1,4 +1,4 @@
-```
+```html
 <!DOCTYPE html>
 <html lang="hy">
 <head>
@@ -7,7 +7,6 @@
     <title>ԱՆԴՐԱՆԻԿ ԲԵՐԲԵՐՅԱՆ — «ԴԵՊԻ ԼՈՒՅՍ»</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* === Глобальные стили — элегантность премиум-класса === */
         * {
             margin: 0;
             padding: 0;
@@ -16,7 +15,7 @@
 
         body {
             font-family: 'Libre Baskerville', serif;
-            background: #f5f1e8; /* Бежевый фон — мягкий, тёплый */
+            background: #f5f1e8;
             color: #3a2f28;
             line-height: 2.15;
             text-align: center;
@@ -25,7 +24,6 @@
             padding-bottom: 60px;
         }
 
-        /* === Фон с лучами солнца — тонкий, премиальный === */
         .sun-rays {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
@@ -44,7 +42,6 @@
             50% { opacity: 0.8; }
         }
 
-        /* === Герой-секция === */
         .hero {
             height: 100vh;
             display: flex;
@@ -119,7 +116,6 @@
             animation: scrollDown 2.8s infinite;
         }
 
-        /* === Контейнер поэмы === */
         .poem-container {
             max-width: 880px;
             margin: 160px auto 100px;
@@ -187,7 +183,6 @@
             color: #3a2f28;
         }
 
-        /* === Заглавные буквы — как обычный текст, каппучиновый цвет === */
         .stanza p::first-letter {
             color: #BC6C39;
             font-weight: 600;
@@ -205,7 +200,6 @@
             opacity: 0.75;
         }
 
-        /* === Частицы — едва заметные, премиальные === */
         .particles {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
@@ -222,7 +216,6 @@
             animation: float 24s infinite linear;
         }
 
-        /* === Анимации === */
         @keyframes fadeInDown {
             from { opacity: 0; transform: translateY(-60px); }
             to { opacity: 1; transform: translateY(0); }
@@ -250,7 +243,6 @@
             100% { transform: translateY(-130vh) translateX(90px) rotate(360deg); opacity: 0; }
         }
 
-        /* === Адаптивность — идеально на всех устройствах === */
         @media (max-width: 1024px) {
             .hero h1 { font-size: 3.8rem; letter-spacing: 3px; }
             .hero .subtitle { font-size: 1.4rem; }
@@ -293,13 +285,9 @@
 </head>
 <body>
 
-    <!-- Фон с лучами солнца -->
     <div class="sun-rays"></div>
-
-    <!-- Фоновые частицы -->
     <div class="particles" id="particles"></div>
 
-    <!-- Герой-секция -->
     <section class="hero">
         <h1>ԴԵՊԻ ԼՈՒՅՍ</h1>
         <p class="subtitle">ԱՆԴՐԱՆԻԿ ԲԵՐԲԵՐՅԱՆ</p>
@@ -307,10 +295,8 @@
         <div class="scroll-indicator"></div>
     </section>
 
-    <!-- Поэма — ВСЕ 8 ЧАСТЕЙ -->
     <div class="poem-container">
 
-        
         <div class="part">
             <h2 class="part-title">Մաս առաջին<br>ԵՐԿՈՒՆՔ</h2>
             <p class="description">
@@ -328,7 +314,6 @@
             </div>
         </div>
 
-        
         <div class="part">
             <h2 class="part-title">Մաս երկրորդ<br>ԼՈՒՅՍԻ ՀԵՏՔՈՎ</h2>
             <p class="description">
@@ -350,7 +335,6 @@
             </div>
         </div>
 
-        
         <div class="part">
             <h2 class="part-title">Մաս երրորդ<br>ԵՐԱԶԱՆՔ</h2>
             <p class="description">
@@ -358,7 +342,6 @@
             </p>
         </div>
 
-        
         <div class="part">
             <h2 class="part-title">Մաս չորրորդ<br>ՓՈՐՁՈՒԹՅԱՆ ՈՒՂԻ</h2>
             <p class="description">
@@ -377,46 +360,44 @@
             </div>
         </div>
 
-        
-<div class="part">
-    <h2 class="part-title">Մաս հինգերորդ<br>ՊԱՅՔԱՐ</h2>
-    <p class="description">
-        ... Հանուն երազանքների իրականացման, հանուն լույսի հաղթանակի, պետք է պայքարել: Կյանքը նման է բաց ծովի...
-    </p>
-    <div class="stanza">
-        <p>Կյանքն այս բաց ծովի պես,<br>Հույսն իմ մեծ նավի պես,<br>Օրն իմ նոր պայքար է վառ...<br>Հույսն իմ առագաստ է բաց...</p>
-        <p>Մութն անհույս, անզոր է,<br>Երբ լույսն իմ հզոր է...</p>
-    </div>
-    <div class="stanza">
-        <p>Ճանապարհն իմ՝<br>Հողմ ու փոթորիկ է,<br>Խելահեղ ալիք է,<br>Մե՛րթ լույս, մե՛րթ խավար է,<br>Կյանքն անվերջ պայքար է...</p>
-        <p>Հանուն կյանքի պայքար, պայքա՛ր...</p>
-    </div>
-    <div class="stanza">
-        <p>Ուժ տո՛ւր, կամք տո՛ւր,<br>Հայր մեր,<br>Ափերին հասնենք...</p>
-        <p>Քո հզոր լույսով<br>Ծովերն անցնենք,<br>Կամքով արդար,<br>Ապրենք, ապրենք...</p>
-    </div>
-    <div class="stanza">
-        <p>Ուղին երկար է,<br>Եվ օրը՝ դար է...</p>
-        <p>Հող, ջուր, հով, հուր...<br>Կյանքը մեր տարերք է,<br>Մարդն արև ու երգ է,<br>Հողի զավակ է,<br>Ծովի կոհակ է...</p>
-    </div>
-    <div class="stanza">
-        <p>Հողն այս ցան ու հերկ է,<br>Ջուրն այս բար ու բերք է,<br>Ձայնն Աստծո՝ օրհներգ է լուռ...</p>
-        <p>Տե՛ր, փրկյա՛ սիրով քո մեզ...<br>Հա՛յր, օրհնի՛ր,<br>Տո՛ւր մեր խելահեղ ծովին խաղաղություն,<br>Խաղաղություն տո՛ւր սրտերին մեր...</p>
-    </div>
-    <div class="stanza">
-        <p>Սի՛րտ, թնդա՛,<br>Հա՛յր, ցնծա՛,<br>Լույս տո՛ւր առհավետ...</p>
-    </div>
-    <div class="divider">***</div>
-    <div class="stanza">
-        <p>Լույսը ծնվել է,<br>Օրը բացվել է,<br>Զանգը հնչել է,<br>Ժամը հասել է մեր...</p>
-        <p>Հանուն կյանքի<br>Առա՛ջ, առա՜ջ,<br>Հանուն կյանքի<br>Առա՜ջ, առա՜ջ...</p>
-    </div>
-    <div class="stanza">
-        <p>Կյանքն անվերջ պայքար է նոր,<br>Որդիներիդ տո՛ւր իմաստություն հավետ,<br>Իմաստություն արարչալույս...</p>
-        <p>Արդար է լույսը քո,<br>Մեր արևն արդար է,<br>Վառ արևն արդար է հավիտյան,<br>Հուր- հավիտյան...</p>
-    </div>
-</div>
-
+        <div class="part">
+            <h2 class="part-title">Մաս հինգերորդ<br>ՊԱՅՔԱՐ</h2>
+            <p class="description">
+                ... Հանուն երազանքների իրականացման, հանուն լույսի հաղթանակի, պետք է պայքարել: Կյանքը նման է բաց ծովի...
+            </p>
+            <div class="stanza">
+                <p>Կյանքն այս բաց ծովի պես,<br>Հույսն իմ մեծ նավի պես,<br>Օրն իմ նոր պայքար է վառ...<br>Հույսն իմ առագաստ է բաց...</p>
+                <p>Մութն անհույս, անզոր է,<br>Երբ լույսն իմ հզոր է...</p>
+            </div>
+            <div class="stanza">
+                <p>Ճանապարհն իմ՝<br>Հողմ ու փոթորիկ է,<br>Խելահեղ ալիք է,<br>Մե՛րթ լույս, մե՛րթ խավար է,<br>Կյանքն անվերջ պայքար է...</p>
+                <p>Հանուն կյանքի պայքար, պայքա՛ր...</p>
+            </div>
+            <div class="stanza">
+                <p>Ուժ տո՛ւր, կամք տո՛ւր,<br>Հայր մեր,<br>Ափերին հասնենք...</p>
+                <p>Քո հզոր լույսով<br>Ծովերն անցնենք,<br>Կամքով արդար,<br>Ապրենք, ապրենք...</p>
+            </div>
+            <div class="stanza">
+                <p>Ուղին երկար է,<br>Եվ օրը՝ դար է...</p>
+                <p>Հող, ջուր, հով, հուր...<br>Կյանքը մեր տարերք է,<br>Մարդն արև ու երգ է,<br>Հողի զավակ է,<br>Ծովի կոհակ է...</p>
+            </div>
+            <div class="stanza">
+                <p>Հողն այս ցան ու հերկ է,<br>Ջուրն այս բար ու բերք է,<br>Ձայնն Աստծո՝ օրհներգ է լուռ...</p>
+                <p>Տե՛ր, փրկյա՛ սիրով քո մեզ...<br>Հա՛յր, օրհնի՛ր,<br>Տո՛ւր մեր խելահեղ ծովին խաղաղություն,<br>Խաղաղություն տո՛ւր սրտերին մեր...</p>
+            </div>
+            <div class="stanza">
+                <p>Սի՛րտ, թնդա՛,<br>Հա՛յր, ցնծա՛,<br>Լույս տո՛ւր առհավետ...</p>
+            </div>
+            <div class="divider">***</div>
+            <div class="stanza">
+                <p>Լույսը ծնվել է,<br>Օրը բացվել է,<br>Զանգը հնչել է,<br>Ժամը հասել է մեր...</p>
+                <p>Հանուն կյանքի<br>Առա՛ջ, առա՜ջ,<br>Հանուն կյանքի<br>Առա՜ջ, առա՜ջ...</p>
+            </div>
+            <div class="stanza">
+                <p>Կյանքն անվերջ պայքար է նոր,<br>Որդիներիդ տո՛ւր իմաստություն հավետ,<br>Իմաստություն արարչալույս...</p>
+                <p>Արդար է լույսը քո,<br>Մեր արևն արդար է,<br>Վառ արևն արդար է հավիտյան,<br>Հուր- հավիտյան...</p>
+            </div>
+        </div>
 
         <div class="part">
             <h2 class="part-title">Մաս վեցերորդ<br>ԵՐԴՈՒՄ</h2>
@@ -436,7 +417,6 @@
             </div>
         </div>
 
-        
         <div class="part">
             <h2 class="part-title">Մաս յոթերորդ<br>ՀԱՆՈՒՆ ԶԱՐԹՈՆՔԻ</h2>
             <p class="description">
@@ -463,7 +443,6 @@
             </div>
         </div>
 
-        
         <div class="part">
             <h2 class="part-title">Մաս ութերորդ<br>ՆՈՐ ԱՐՇԱԼՈՒՅՍ</h2>
             <p class="description">
@@ -482,7 +461,6 @@
     </div>
 
     <script>
-        // Частицы
         const particlesContainer = document.getElementById('particles');
         const particleCount = 80;
 
@@ -504,7 +482,6 @@
             particlesContainer.appendChild(particle);
         }
 
-        // Появление при скролле
         const parts = document.querySelectorAll('.part');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -519,7 +496,6 @@
 
         parts.forEach(part => observer.observe(part));
 
-        // Плавный скролл
         document.querySelector('.scroll-indicator').addEventListener('click', () => {
             document.querySelector('.poem-container').scrollIntoView({ behavior: 'smooth' });
         });
@@ -527,8 +503,3 @@
 </body>
 </html>
 ```
-
-Remove HTML comments to fix rendering
-
-
-
